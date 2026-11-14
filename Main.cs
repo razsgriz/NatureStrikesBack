@@ -5,8 +5,10 @@ public partial class Main : Node2D
 {
 
     private Timer _treeSpawn;
-    [Export] public int trees { get; set; } = 1;
-
+    [Export] public int trees { get; set; }
+    
+    [Export(PropertyHint.Range, "1,0")]
+    
     public override void _Ready()
     {
         _treeSpawn = GetNode<Timer>("TreeSpawn");

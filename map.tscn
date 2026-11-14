@@ -1,8 +1,14 @@
 [gd_scene format=3 uid="uid://dtawfktt0jl6y"]
 
 [ext_resource type="Script" uid="uid://cpy36ba3pbk51" path="res://Map.cs" id="1_c7s6e"]
+[ext_resource type="Texture2D" uid="uid://c20y6g50xuvlc" path="res://assets/world-map.png" id="2_wijl4"]
 
 [node name="Map" type="Node2D" unique_id=324186615]
 script = ExtResource("1_c7s6e")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=588587682]
+
+[node name="WorldMap" type="Sprite2D" parent="." unique_id=1092596930]
+position = Vector2(114.5, 122)
+scale = Vector2(0.9192708, 0.8759259)
+texture = ExtResource("2_wijl4")
