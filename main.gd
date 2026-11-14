@@ -6,7 +6,6 @@ class tree_income:
 static var treeIncome = tree_income.new()
 
 @export var trees = 1
-
 func _ready():	
 	$treeAmount.text = str(treeIncome.value)
 	var treeSpawner = $TreeSpawner
@@ -26,7 +25,7 @@ func _on_tree_spawner_timeout() -> void:
 	#popup_text.text = "+" + str(treeIncome.value)
 	#treeNode.add_child(popup_text)
 	#popup_text.position = Vector2(100, -350)
-	await delete_tree(treeNode)
+	#await delete_tree(treeNode)
 	
 	var claimTree = Button.new()
 	claimTree.pressed.connect(
