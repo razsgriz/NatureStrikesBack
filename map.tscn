@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://dtawfktt0jl6y"]
 
-[node name="Map" type="Node2D" unique_id=1583919661]
+[ext_resource type="Script" uid="uid://cpy36ba3pbk51" path="res://Map.cs" id="1_c7s6e"]
+
+[node name="Map" type="Node2D" unique_id=324186615]
+script = ExtResource("1_c7s6e")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=588587682]
