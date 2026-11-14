@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dtawfktt0jl6y"]
 
-[ext_resource type="Script" uid="uid://cpy36ba3pbk51" path="res://Map.cs" id="1_c7s6e"]
+[ext_resource type="Script" uid="uid://dk7c7pp7usnak" path="res://map.gd" id="1_wijl4"]
 [ext_resource type="Texture2D" uid="uid://c20y6g50xuvlc" path="res://assets/world-map.png" id="2_wijl4"]
 
 [node name="Map" type="Node2D" unique_id=324186615]
-script = ExtResource("1_c7s6e")
+script = ExtResource("1_wijl4")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=588587682]
 
