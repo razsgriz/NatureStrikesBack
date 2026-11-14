@@ -21,8 +21,9 @@ public partial class Main : Node2D
     {
         var treeScene = GD.Load<PackedScene>("res://tree.tscn");
         var tree = treeScene.Instantiate();
-        tree.GetNode<Sprite2D>("Tree/Sprite2D").Position = new Vector2(50, 50);
+
+        Random skibidi = new Random();
+        tree.GetNode<Sprite2D>("Sprite2D").Position = new Vector2(skibidi.Next(-900, 900), skibidi.Next(-900, 900));
         AddChild(tree);
-        //GD.Print("Tree should be added");
     }
 }
