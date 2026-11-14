@@ -1,13 +1,22 @@
 [gd_scene format=3 uid="uid://kgu0t5mamlny"]
 
 [ext_resource type="Script" uid="uid://xr4dfmdwt4fw" path="res://tree.gd" id="1_nnvrw"]
+[ext_resource type="Script" uid="uid://b0gx2xqttr41e" path="res://claim_tree.gd" id="2_gvmkm"]
 [ext_resource type="Texture2D" uid="uid://booa8rtb52mek" path="res://assets/tree2.png" id="2_nnvrw"]
 
 [node name="Tree" type="Node2D" unique_id=1230906408]
-position = Vector2(232, 130)
 script = ExtResource("1_nnvrw")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=446061955]
-position = Vector2(-4, -0.99998474)
+[node name="ClaimTree" type="Button" parent="." unique_id=2029980303]
+offset_left = -45.0
+offset_top = -46.0
+offset_right = 48.0
+offset_bottom = 48.0
+script = ExtResource("2_gvmkm")
+
+[node name="Sprite2D" type="Sprite2D" parent="ClaimTree" unique_id=446061955]
+position = Vector2(45, 46)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_nnvrw")
+
+[connection signal="pressed" from="ClaimTree" to="." method="_on_claim_tree_pressed"]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ba0r8jpc6yccp"]
 
 [ext_resource type="Script" uid="uid://b0ydofrg06h52" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="FontFile" uid="uid://dyny3rurijsno" path="res://Fredoka-Regular.ttf" id="2_5vw27"]
 [ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bve8xc0agaknx" path="res://counterui.tscn" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://ciq7af7qh2baf" path="res://assets/eurasia.png" id="4_7mycd"]
@@ -46,13 +47,15 @@ script = SubResource("GDScript_0xm2m")
 
 [node name="treeAmount" type="Label" parent="." unique_id=78364279]
 top_level = true
-offset_left = 404.99997
-offset_top = -549.9999
-offset_right = 456.79996
-offset_bottom = -526.9999
-scale = Vector2(10, 10)
+offset_left = -160.0
+offset_top = -498.0
+offset_right = 268.0
+offset_bottom = -376.0
 size_flags_horizontal = 0
 size_flags_vertical = 8
+tooltip_text = "ebnfwjfwbjnlkjwfnkjen"
+theme_override_fonts/font = ExtResource("2_5vw27")
+theme_override_font_sizes/font_size = 70
 horizontal_alignment = 1
 script = ExtResource("3_h2yge")
 
@@ -60,8 +63,7 @@ script = ExtResource("3_h2yge")
 autostart = true
 
 [node name="counterui" parent="." unique_id=711349832 instance=ExtResource("4_1bvp3")]
-top_level = true
-position = Vector2(567, -419)
+position = Vector2(-24, -416)
 
 [node name="Eurasia" type="Sprite2D" parent="." unique_id=1968136900]
 position = Vector2(479, -189)
