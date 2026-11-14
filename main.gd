@@ -6,6 +6,7 @@ class tree_income:
 static var treeIncome = tree_income.new()
 
 @export var trees = 1
+
 func _ready():	
 	$treeAmount.text = str(treeIncome.value)
 	var treeSpawner = $TreeSpawner
