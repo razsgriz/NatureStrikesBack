@@ -1,15 +1,14 @@
 extends Node
 
+
 class tree_income:
 	var value = 1
 
 static var treeIncome = tree_income.new()
 
 @export var trees = 1
-func _ready():
-	$treeAmount.text = str(treeIncome.value)
-	var treeSpawner = $TreeSpawner
 
+signal tree_pressed(new_amount: int)
 
 func _on_tree_spawner_timeout() -> void:
 	var Children = $TreeSpawner.get_children()
@@ -49,6 +48,5 @@ func delete_tree(treeNode):
 	treeNode.queue_free()
 
 func _on_claim_tree_pressed() -> void:
+	tree_pressed.emit(treeIncome.value)
 	print("thingy")
-	treeIncome.value += 1
-	$treeAmount.text = str(treeIncome.value)
