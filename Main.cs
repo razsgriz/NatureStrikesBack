@@ -17,7 +17,9 @@ public partial class Main : Node2D
 
     private void SpawnTree()
     {
-        Tree tree = treeScene.Instantiate<Tree>();
+        var treeScene = GD.Load<PackedScene>("res://tree.tscn");
+        var tree = treeScene.Instantiate();
         AddChild(tree);
+        GD.Print("Tree should be added");
     }
 }

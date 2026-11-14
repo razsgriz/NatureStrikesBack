@@ -6,3 +6,4 @@
 script = ExtResource("1_ig7tw")
 
 [node name="TreeSpawn" type="Timer" parent="." unique_id=1918540710]
+autostart = true

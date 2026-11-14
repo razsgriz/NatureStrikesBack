@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://kgu0t5mamlny"]
 
 [ext_resource type="Script" uid="uid://cswxxdmey23ng" path="res://Tree.cs" id="1_brfkd"]
+[ext_resource type="Texture2D" uid="uid://booa8rtb52mek" path="res://assets/tree2.png" id="2_nnvrw"]
 
 [node name="Tree" type="Node2D" unique_id=1230906408]
 script = ExtResource("1_brfkd")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=446061955]
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1824730191]
+texture = ExtResource("2_nnvrw")
