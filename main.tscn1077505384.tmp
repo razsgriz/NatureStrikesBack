@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ba0r8jpc6yccp"]
+
+[ext_resource type="Script" uid="uid://b0ydofrg06h52" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://c20y6g50xuvlc" path="res://assets/world-map.png" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://ckwd7gniiisq" path="res://tree_spawner.gd" id="2_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=350928047]
+script = ExtResource("1_0xm2m")
+
+[node name="TreeSpawner" type="Timer" parent="." unique_id=1918540710]
+autostart = true
+script = ExtResource("2_h2yge")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1432403375]
+
+[node name="WorldMap" type="Sprite2D" parent="." unique_id=1664929261]
+scale = Vector2(0.9192708, 0.8759259)
+texture = ExtResource("2_0xm2m")
+
+[connection signal="timeout" from="TreeSpawner" to="." method="_on_tree_spawner_timeout"]

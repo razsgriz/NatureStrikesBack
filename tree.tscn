@@ -11,11 +11,3 @@ script = ExtResource("1_nnvrw")
 position = Vector2(-4, -0.99998474)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_nnvrw")
-
-[node name="Button" type="Button" parent="." unique_id=735310784]
-offset_left = -67.0
-offset_top = -48.0
-offset_right = 53.0
-offset_bottom = 50.0
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
