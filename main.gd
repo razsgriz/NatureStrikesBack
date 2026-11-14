@@ -27,14 +27,11 @@ func _on_tree_spawner_timeout() -> void:
 	##popup_text.position = Vector2(100, -350)
 #
 	#var claimTree = Button.new()
-	#claimTree.pressed.connect(
-			#func() -> void:
-				#claimTree.hide()
-				#treeNode.hide()
-				#treeIncome.value += 1
-				#print(str(treeIncome.value))
-				#$treeAmount.text = str(treeIncome.value)
-	#)
+	treeNode.pressed.connect(
+			func() -> void:
+				treeIncome.value += 1
+				$treeAmount.text = str(treeIncome.value)
+	)
 	#treeNode.add_child(claimTree)
 	#claimTree.scale = Vector2(20, 20)
 	#claimTree.position = Vector2(0, -100)
