@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://b0ydofrg06h52" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://c20y6g50xuvlc" path="res://assets/world-map.png" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_h2yge"]
-[ext_resource type="Script" uid="uid://vph8217ton28" path="res://event_generator.gd" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bve8xc0agaknx" path="res://counterui.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="5_lquwl"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 script/source = "extends Timer
@@ -59,9 +59,12 @@ script = ExtResource("3_h2yge")
 
 [node name="EventGenerator" type="Timer" parent="." unique_id=1484701567]
 autostart = true
-script = ExtResource("4_1bvp3")
+
 [node name="counterui" parent="." unique_id=711349832 instance=ExtResource("4_1bvp3")]
 position = Vector2(-601, 436)
+
+[node name="Upgrade1" parent="." unique_id=1113633998 instance=ExtResource("5_lquwl")]
+position = Vector2(174, -33)
 
 [connection signal="timeout" from="TreeSpawner" to="." method="_on_tree_spawner_timeout"]
 [connection signal="timeout" from="EventGenerator" to="." method="_on_event_generator_timeout"]
