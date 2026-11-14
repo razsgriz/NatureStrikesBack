@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://ba0r8jpc6yccp"]
 
+[ext_resource type="Script" uid="uid://rp6f04gw1je3" path="res://Main.cs" id="1_ig7tw"]
+
 [node name="Main" type="Node2D" unique_id=350928047]
+script = ExtResource("1_ig7tw")
+
+[node name="TreeSpawn" type="Timer" parent="." unique_id=1918540710]

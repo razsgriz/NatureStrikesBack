@@ -4,3 +4,7 @@
 
 [node name="Tree" type="Node2D" unique_id=1230906408]
 script = ExtResource("1_brfkd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=446061955]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1824730191]
