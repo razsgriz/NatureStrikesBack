@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ba3y0r8x4ow2u"]
+
+[ext_resource type="Script" uid="uid://bm4g66rksuyj2" path="res://upgradeone.gd" id="1_alr6r"]
+[ext_resource type="Texture2D" uid="uid://dxo40dt73w8cr" path="res://assets/IMG_1221.jpeg" id="1_k80ou"]
+
+[node name="Upgrade1" type="Node2D" unique_id=1113633998]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_alr6r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1194291069]
+texture = ExtResource("1_k80ou")
+
+[node name="Button" type="Button" parent="." unique_id=1426977276]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
