@@ -11,4 +11,5 @@ func _on_button_pressed() -> void:
 	hide()
 	print('should be clicked rn')
 	trees += 1
+	print(trees)
 	pass # Replace with function body.
