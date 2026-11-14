@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bve8xc0agaknx"]
+
+[ext_resource type="Texture2D" uid="uid://e0afomh2yal4" path="res://assets/tree counter.jpg" id="1_4haoh"]
+
+[node name="counterui" type="Node2D" unique_id=711349832]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1769348788]
+position = Vector2(15, -9.999996)
+scale = Vector2(0.5271261, 0.702952)
+texture = ExtResource("1_4haoh")
