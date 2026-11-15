@@ -1,5 +1,6 @@
 extends Node
 
+
 class tree_income:
 	var value = 1
 
@@ -15,7 +16,7 @@ func _on_tree_spawner_timeout() -> void:
 	var Children = $TreeSpawner.get_children()
 	var scene = load("res://tree.tscn")
 	var tree = scene.instantiate()
-	var treeNode = tree.get_node("Sprite2D")
+	var treeNode = tree.get_node("ClaimTree")
 	var rng = RandomNumberGenerator.new()
 	treeNode.position = Vector2(rng.randf_range(-900, 900), rng.randf_range(-900, 900))
 	$TreeSpawner.add_child(tree)
@@ -36,17 +37,22 @@ func _on_tree_spawner_timeout() -> void:
 			print(str(treeIncome.value))
 			$treeAmount.text = str(treeIncome.value)
 	)
-	claimTree.scale = Vector2(5, 5)
-	claimTree.position = treeNode.position + Vector2(200, 100)
-	add_child(claimTree)
-
-func tree_claimed(treeNode):
-	treeNode.hide()
-	treeIncome.value += 1
-	print(str(treeIncome.value))
-	$treeAmount.text = str(treeIncome.value)
-	pass
+	#treeNode.add_child(claimTree)
+	#claimTree.scale = Vector2(20, 20)
+	#claimTree.position = Vector2(0, -100)
+	await delete_tree(treeNode)
+	#
+#func tree_claimed(treeNode):
+	#treeNode.hide()
+	#treeIncome.value += 1
+	#print(str(treeIncome.value))
+	#$treeAmount.text = str(treeIncome.value)
+	#pass
 
 func delete_tree(treeNode):
 	await get_tree().create_timer(5).timeout
 	treeNode.queue_free()
+
+func _on_claim_tree_pressed() -> void:
+	tree_pressed.emit(treeIncome.value)
+	print("thingy")

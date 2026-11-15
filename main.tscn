@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ba0r8jpc6yccp"]
 
 [ext_resource type="Script" uid="uid://b0ydofrg06h52" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://c20y6g50xuvlc" path="res://assets/world-map.png" id="2_0xm2m"]
-[ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://bve8xc0agaknx" path="res://counterui.tscn" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://ciq7af7qh2baf" path="res://assets/eurasia.png" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://ddfuwhieexy3s" path="res://assets/nort america.png" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://dwkqf3njkhl5q" path="res://assets/waka waka (africa).png" id="6_5vw27"]
+[ext_resource type="PackedScene" uid="uid://d2wl2u53banj7" path="res://ui.tscn" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://jljbpgb4ghd4" path="res://Australia.png" id="7_272bh"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 script/source = "extends Timer
@@ -42,29 +43,30 @@ script = SubResource("GDScript_0xm2m")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1432403375]
 
-[node name="WorldMap" type="Sprite2D" parent="." unique_id=1664929261]
-scale = Vector2(0.9192708, 0.8759259)
-texture = ExtResource("2_0xm2m")
-
-[node name="treeAmount" type="Label" parent="." unique_id=78364279]
-top_level = true
-offset_left = -738.00006
-offset_top = 316.00003
-offset_right = -692.50006
-offset_bottom = 339.00003
-scale = Vector2(10, 10)
-size_flags_horizontal = 0
-size_flags_vertical = 8
-script = ExtResource("3_h2yge")
-
 [node name="EventGenerator" type="Timer" parent="." unique_id=1484701567]
 autostart = true
 
-[node name="counterui" parent="." unique_id=711349832 instance=ExtResource("4_1bvp3")]
-position = Vector2(-601, 436)
+[node name="Eurasia" type="Sprite2D" parent="." unique_id=1968136900]
+position = Vector2(479, -189)
+scale = Vector2(1.9248749, 1.7738096)
+texture = ExtResource("4_7mycd")
 
-[node name="Upgrade1" parent="." unique_id=1113633998 instance=ExtResource("5_lquwl")]
-position = Vector2(174, -33)
+[node name="Americas" type="Sprite2D" parent="." unique_id=997143134]
+position = Vector2(-596.00006, -98.124954)
+scale = Vector2(1.2244225, 1.1530542)
+texture = ExtResource("5_272bh")
+
+[node name="Africa" type="Sprite2D" parent="." unique_id=456698430]
+position = Vector2(-20, 226.99998)
+scale = Vector2(3.697842, 3.1315792)
+texture = ExtResource("6_5vw27")
+
+[node name="Australia" type="Sprite2D" parent="." unique_id=1297983045]
+position = Vector2(573, 274.25003)
+scale = Vector2(2.2142856, 1.8400623)
+texture = ExtResource("7_272bh")
+
+[node name="ui" parent="." unique_id=1690332116 instance=ExtResource("6_7mycd")]
 
 [connection signal="timeout" from="TreeSpawner" to="." method="_on_tree_spawner_timeout"]
 [connection signal="timeout" from="EventGenerator" to="." method="_on_event_generator_timeout"]
