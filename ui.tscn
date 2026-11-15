@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cpdd00x6ejhxx" path="res://ui.gd" id="1_nltto"]
 [ext_resource type="FontFile" uid="uid://dyny3rurijsno" path="res://Fredoka-Regular.ttf" id="2_0qrqu"]
 [ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_mx0kw"]
+[ext_resource type="AudioStream" uid="uid://bdqx6280uylgm" path="res://MeanGreen.wav" id="5_ibotj"]
 
 [node name="ui" type="CanvasLayer" unique_id=1690332116]
 follow_viewport_enabled = true
@@ -27,3 +28,7 @@ horizontal_alignment = 1
 script = ExtResource("3_mx0kw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2075194142]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=309151858]
+stream = ExtResource("5_ibotj")
+autoplay = true
