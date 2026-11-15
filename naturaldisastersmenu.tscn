@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b55q2my8ycwcm" path="res://naturaldisastersmenu.gd" id="1_7jkwk"]
 [ext_resource type="Texture2D" uid="uid://vbkb36rt61qa" path="res://assets/upgrades menu.jpg" id="1_cgyn4"]
+[ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="3_4bnue"]
+[ext_resource type="Texture2D" uid="uid://bbea6jdat3pv5" path="res://assets/tsunami.png" id="4_k3iss"]
 
 [node name="naturaldisastersmenu" type="Node2D" unique_id=1231378744]
 script = ExtResource("1_7jkwk")
@@ -17,3 +19,28 @@ offset_bottom = -318.0
 theme_override_font_sizes/font_size = 34
 text = "NATURAL DISASTERS MENU"
 horizontal_alignment = 1
+
+[node name="Upgrade1" parent="." unique_id=1113633998 instance=ExtResource("3_4bnue")]
+position = Vector2(1, 80)
+scale = Vector2(0.25, 0.25)
+
+[node name="Label" type="Label" parent="Upgrade1" unique_id=1581298110]
+offset_left = -756.0
+offset_top = -112.0
+offset_right = 152.0
+offset_bottom = 148.0
+theme_override_font_sizes/font_size = 150
+text = "Tsunami"
+
+[node name="Sprite2D2" type="Sprite2D" parent="Upgrade1" unique_id=52633995]
+position = Vector2(48, -20)
+scale = Vector2(0.33149448, 0.37096775)
+texture = ExtResource("4_k3iss")
+
+[node name="Label2" type="Label" parent="Upgrade1" unique_id=368457094]
+offset_left = 364.0
+offset_top = -112.0
+offset_right = 683.0
+offset_bottom = 148.0
+theme_override_font_sizes/font_size = 150
+text = "Cost"
