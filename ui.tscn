@@ -11,14 +11,15 @@ follow_viewport_enabled = true
 script = ExtResource("1_nltto")
 
 [node name="counterui" parent="." unique_id=711349832 instance=ExtResource("1_37rai")]
-position = Vector2(-609, -432)
+position = Vector2(-23, -399)
+scale = Vector2(0.66, 1.32)
 
 [node name="treeAmount" type="Label" parent="." unique_id=186613561]
 top_level = true
-offset_left = -797.0
-offset_top = -521.0
-offset_right = -242.0
-offset_bottom = -366.0
+offset_left = -82.0
+offset_top = -490.0
+offset_right = 130.0
+offset_bottom = -347.0
 size_flags_horizontal = 0
 size_flags_vertical = 8
 tooltip_text = "ebnfwjfwbjnlkjwfnkjen"

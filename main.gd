@@ -15,7 +15,21 @@ func _on_tree_spawner_timeout() -> void:
 	var tree = scene.instantiate()
 	var treeNode = tree.get_node("ClaimTree")
 	var rng = RandomNumberGenerator.new()
-	treeNode.position = Vector2(rng.randf_range(-900, 900), rng.randf_range(-900, 900))
+	var lpick = rng.randi_range(0, 5)
+	var location = Vector2(0, 0)
+	if lpick == 0:
+		location = Vector2(rng.randf_range(-902, -701), rng.randf_range(-487, -455))
+	elif lpick == 1:
+		location = Vector2(rng.randf_range(-710, -549), rng.randf_range(-426, -266))
+	elif lpick == 2:
+		location = Vector2(rng.randf_range(-367, -321), rng.randf_range(15, 108))
+	elif lpick == 3:
+		location = Vector2(rng.randf_range(-168, 61), rng.randf_range(0, 143))
+	elif lpick == 4:
+		location = Vector2(rng.randf_range(14, 738), rng.randf_range(-216, -125))
+	elif lpick == 5:
+		location = Vector2(rng.randf_range(352, 789), rng.randf_range(305, 140))
+	treeNode.position = location
 	$TreeSpawner.add_child(tree)
 
 	#var popup_text = Label.new()
