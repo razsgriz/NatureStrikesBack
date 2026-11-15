@@ -22,6 +22,6 @@ text = "Disasters ->"
 script = ExtResource("3_ofs6k")
 
 [node name="naturaldisastersmenu" parent="." unique_id=1231378744 instance=ExtResource("3_g3b05")]
-position = Vector2(1146.6667, 516)
+position = Vector2(1254.6666, -8)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

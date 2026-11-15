@@ -7,14 +7,13 @@
 script = ExtResource("1_7jkwk")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=482935123]
-scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_cgyn4")
 
 [node name="Label" type="Label" parent="." unique_id=1764641209]
-offset_left = -233.0
-offset_top = -304.0
-offset_right = 230.0
-offset_bottom = -233.0
-theme_override_font_sizes/font_size = 25
+offset_left = -240.0
+offset_top = -389.0
+offset_right = 223.0
+offset_bottom = -318.0
+theme_override_font_sizes/font_size = 34
 text = "NATURAL DISASTERS MENU"
 horizontal_alignment = 1

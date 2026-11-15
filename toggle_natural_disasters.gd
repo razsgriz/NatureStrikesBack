@@ -1,6 +1,6 @@
 extends Button
 
-@onready var disastermenu = get_node("../naturaldisastersmenu")
+@onready var disastermenu: Node = get_node("../naturaldisastersmenu")
 
 func _ready():
 	disastermenu.visible = false

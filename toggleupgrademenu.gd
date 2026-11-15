@@ -1,9 +1,9 @@
 extends Button
 
-func openupgrade ():
-	var upgrademenu = get_node("Upgrades")
-	var vis = upgrademenu.Visibility
-	if vis == false:
-		vis = true
-	if vis == true:
-		vis = false
+@onready var upgrademenu = get_node("../Upgrades")
+
+func _ready():
+	upgrademenu.visible = false
+
+func _pressed():
+	upgrademenu.visible = not upgrademenu.visible

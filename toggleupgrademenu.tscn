@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cefafgbaix8tm" path="res://assets/ToggleUpgradesMenu.jpg" id="1_vgdml"]
 [ext_resource type="Script" uid="uid://dowpi6ujm4pw5" path="res://toggleupgrademenu.gd" id="2_rungn"]
+[ext_resource type="PackedScene" uid="uid://vraq7482jxmf" path="res://upgrades.tscn" id="3_lpgi0"]
 
 [node name="Node2D" type="Node2D" unique_id=1345687132]
 scale = Vector2(0.75, 0.75)
@@ -19,5 +20,9 @@ offset_bottom = 134.66669
 theme_override_font_sizes/font_size = 82
 text = "Upgrades ->"
 script = ExtResource("2_rungn")
+
+[node name="Upgrades" parent="." unique_id=60221739 instance=ExtResource("3_lpgi0")]
+position = Vector2(1277.3334, 835.99994)
+script = null
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
