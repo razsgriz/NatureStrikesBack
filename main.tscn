@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://b0ydofrg06h52" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://ciq7af7qh2baf" path="res://assets/eurasia.png" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://jjm0b7ydnkpl" path="res://assets/Australia.png" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://ddfuwhieexy3s" path="res://assets/nort america.png" id="5_272bh"]
 [ext_resource type="Texture2D" uid="uid://dwkqf3njkhl5q" path="res://assets/waka waka (africa).png" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://d2wl2u53banj7" path="res://ui.tscn" id="6_7mycd"]
-[ext_resource type="Texture2D" uid="uid://jljbpgb4ghd4" path="res://Australia.png" id="7_272bh"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 script/source = "extends Timer
@@ -64,7 +64,7 @@ texture = ExtResource("6_5vw27")
 [node name="Australia" type="Sprite2D" parent="." unique_id=1297983045]
 position = Vector2(573, 274.25003)
 scale = Vector2(2.2142856, 1.8400623)
-texture = ExtResource("7_272bh")
+texture = ExtResource("5_7mycd")
 
 [node name="ui" parent="." unique_id=1690332116 instance=ExtResource("6_7mycd")]
 
