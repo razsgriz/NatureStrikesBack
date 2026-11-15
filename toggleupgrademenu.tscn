@@ -2,7 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://cefafgbaix8tm" path="res://assets/ToggleUpgradesMenu.jpg" id="1_vgdml"]
 [ext_resource type="Script" uid="uid://dowpi6ujm4pw5" path="res://toggleupgrademenu.gd" id="2_rungn"]
-[ext_resource type="PackedScene" uid="uid://vraq7482jxmf" path="res://upgrades.tscn" id="3_lpgi0"]
+[ext_resource type="PackedScene" uid="uid://vraq7482jxmf" path="res://upgrades.tscn" id="3_7b3dd"]
+[ext_resource type="Texture2D" uid="uid://vbkb36rt61qa" path="res://assets/upgrades menu.jpg" id="4_scf5d"]
+[ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="5_inwtk"]
+[ext_resource type="Texture2D" uid="uid://dxo40dt73w8cr" path="res://assets/IMG_1221.jpeg" id="6_0pt65"]
 
 [node name="Node2D" type="Node2D" unique_id=1345687132]
 scale = Vector2(0.75, 0.75)
@@ -21,8 +24,85 @@ theme_override_font_sizes/font_size = 82
 text = "Upgrades ->"
 script = ExtResource("2_rungn")
 
-[node name="Upgrades" parent="." unique_id=60221739 instance=ExtResource("3_lpgi0")]
-position = Vector2(1277.3334, 835.99994)
-script = null
+[node name="Upgrades" parent="." unique_id=60221739 instance=ExtResource("3_7b3dd")]
+position = Vector2(1266.6667, 80)
+scale = Vector2(0.53333336, 0.53333336)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Upgrades" unique_id=1211569625]
+scale = Vector2(2, 2)
+texture = ExtResource("4_scf5d")
+
+[node name="Label2" type="Label" parent="Upgrades" unique_id=1408391913]
+offset_left = -470.0
+offset_top = -819.0
+offset_right = 459.0
+offset_bottom = -672.0
+theme_override_font_sizes/font_size = 105
+text = "UPGRADES MENU"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Upgrade4" parent="Upgrades" unique_id=1113633998 instance=ExtResource("5_inwtk")]
+position = Vector2(0, -400)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite1" type="Sprite2D" parent="Upgrades/Upgrade4" unique_id=1433353273]
+texture = ExtResource("6_0pt65")
+
+[node name="Button4" type="Button" parent="Upgrades/Upgrade4" unique_id=1720859477]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
+
+[node name="UPG4" type="Label" parent="Upgrades/Upgrade4" unique_id=222948062]
+offset_left = -700.0
+offset_top = -60.0
+offset_right = 214.99988
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 100
+text = "Tree Multiplier (+1)"
+metadata/_edit_use_anchors_ = true
+
+[node name="UPG42" type="Label" parent="Upgrades/Upgrade4" unique_id=227892043]
+offset_left = 425.0
+offset_top = -60.0
+offset_right = 630.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 100
+text = "Cost"
+metadata/_edit_use_anchors_ = true
+
+[node name="Upgrade5" parent="Upgrades" unique_id=1668973668 instance=ExtResource("5_inwtk")]
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2" type="Sprite2D" parent="Upgrades/Upgrade5" unique_id=90661062]
+texture = ExtResource("6_0pt65")
+
+[node name="Button5" type="Button" parent="Upgrades/Upgrade5" unique_id=1598296954]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
+
+[node name="UPG5" type="Label" parent="Upgrades/Upgrade5" unique_id=267367385]
+offset_left = -700.0
+offset_top = -60.0
+offset_right = 214.99988
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 100
+text = "Progress Rate (+1%)"
+metadata/_edit_use_anchors_ = true
+
+[node name="UPG52" type="Label" parent="Upgrades/Upgrade5" unique_id=940777129]
+offset_left = 425.0
+offset_top = -60.0
+offset_right = 630.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 100
+text = "Cost"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
