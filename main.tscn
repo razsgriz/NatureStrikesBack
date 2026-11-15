@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://b3efnvq0boowl" path="res://green_bar.gd" id="9_4c57u"]
 [ext_resource type="Texture2D" uid="uid://bf57wpao4gde5" path="res://assets/human_bar.jpeg" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://hsqopk25xr8e" path="res://assets/startmenu.png" id="12_dg77c"]
+[ext_resource type="Texture2D" uid="uid://c6au5xa57yfk" path="res://assets/IMG_1245.jpeg" id="13_ycdy4"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 script/source = "extends Timer
@@ -102,6 +103,10 @@ offset_right = 211.0
 offset_bottom = 489.0
 theme_override_font_sizes/font_size = 100
 text = "PLAY"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2018387584]
+z_index = -5
+texture = ExtResource("13_ycdy4")
 
 [connection signal="timeout" from="TreeSpawner" to="." method="_on_tree_spawner_timeout"]
 [connection signal="timeout" from="EventGenerator" to="." method="_on_event_generator_timeout"]
