@@ -57,21 +57,21 @@ offset_bottom = 218.0
 metadata/_edit_use_anchors_ = true
 
 [node name="UPG4" type="Label" parent="Upgrades/Upgrade4" unique_id=222948062]
-offset_left = -700.0
-offset_top = -60.0
-offset_right = 214.99988
-offset_bottom = 62.0
-theme_override_font_sizes/font_size = 100
-text = "Tree Multiplier (+1)"
+offset_left = -700.0003
+offset_top = -69.99992
+offset_right = 223.9997
+offset_bottom = 52.000076
+theme_override_font_sizes/font_size = 62
+text = "Better seed (+20 trees per click)"
 metadata/_edit_use_anchors_ = true
 
 [node name="UPG42" type="Label" parent="Upgrades/Upgrade4" unique_id=227892043]
-offset_left = 425.0
-offset_top = -60.0
-offset_right = 630.0
-offset_bottom = 62.0
+offset_left = 319.9994
+offset_top = -54.999924
+offset_right = 765.9994
+offset_bottom = 67.00008
 theme_override_font_sizes/font_size = 100
-text = "Cost"
+text = "Cost (-10)"
 metadata/_edit_use_anchors_ = true
 
 [node name="Upgrade5" parent="Upgrades" unique_id=1668973668 instance=ExtResource("5_inwtk")]
