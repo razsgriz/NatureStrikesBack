@@ -42,7 +42,7 @@ func _on_tree_spawner_timeout() -> void:
 	treeNode.pressed.connect(
 		func() -> void:
 			treeNode.hide()
-			PlayerData.treeIncome += 1
+			PlayerData.treeIncome += PlayerData.treeIncomeIncrease
 			$green_bar.position += Vector2(1.78, 0)
 			$ui/treeAmount.text = str(PlayerData.treeIncome)
 			
