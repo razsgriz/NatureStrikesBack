@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://drwt2qv7dky67" path="res://upgrades.gd" id="1_alr6r"]
 [ext_resource type="Texture2D" uid="uid://vbkb36rt61qa" path="res://assets/upgrades menu.jpg" id="1_k80ou"]
+[ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="3_ba88x"]
+[ext_resource type="Texture2D" uid="uid://dxo40dt73w8cr" path="res://assets/IMG_1221.jpeg" id="4_fn3gv"]
 
 [node name="Upgrades" type="Node2D" unique_id=60221739]
 script = ExtResource("1_alr6r")
@@ -18,3 +20,44 @@ offset_bottom = -672.0
 theme_override_font_sizes/font_size = 105
 text = "UPGRADES MENU"
 horizontal_alignment = 1
+
+[node name="Upgrade1" parent="." unique_id=1113633998 instance=ExtResource("3_ba88x")]
+position = Vector2(0, -400)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Upgrade1" unique_id=1886769087]
+texture = ExtResource("4_fn3gv")
+
+[node name="Button2" type="Button" parent="Upgrade1" unique_id=497484464]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Upgrade2" parent="." unique_id=12007991 instance=ExtResource("3_ba88x")]
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Upgrade2" unique_id=955125706]
+texture = ExtResource("4_fn3gv")
+
+[node name="Button2" type="Button" parent="Upgrade2" unique_id=351852596]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Upgrade3" parent="." unique_id=252230573 instance=ExtResource("3_ba88x")]
+position = Vector2(0, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Upgrade3" unique_id=497528432]
+texture = ExtResource("4_fn3gv")
+
+[node name="Button2" type="Button" parent="Upgrade3" unique_id=1180797580]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true

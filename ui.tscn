@@ -6,13 +6,17 @@
 [ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_mx0kw"]
 [ext_resource type="AudioStream" uid="uid://c4jri6c67h7g2" path="res://assets/audio/MeanGreen.wav" id="5_ibotj"]
 [ext_resource type="PackedScene" uid="uid://1a3s0ltctbqc" path="res://toggleupgrademenu.tscn" id="6_n5ude"]
+[ext_resource type="PackedScene" uid="uid://vraq7482jxmf" path="res://upgrades.tscn" id="7_waa4j"]
+[ext_resource type="Texture2D" uid="uid://vbkb36rt61qa" path="res://assets/upgrades menu.jpg" id="8_e2l4f"]
+[ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="9_n5rqp"]
+[ext_resource type="Texture2D" uid="uid://dxo40dt73w8cr" path="res://assets/IMG_1221.jpeg" id="10_irxef"]
 
 [node name="ui" type="CanvasLayer" unique_id=1690332116]
 follow_viewport_enabled = true
 script = ExtResource("1_nltto")
 
 [node name="counterui" parent="." unique_id=711349832 instance=ExtResource("1_37rai")]
-position = Vector2(0, -480)
+position = Vector2(0, -475)
 scale = Vector2(0.5, 0.5)
 
 [node name="treeAmount" type="Label" parent="." unique_id=186613561]
@@ -34,6 +38,64 @@ script = ExtResource("3_mx0kw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=435289718]
 stream = ExtResource("5_ibotj")
+autoplay = true
 
 [node name="Node2D" parent="." unique_id=1345687132 instance=ExtResource("6_n5ude")]
-position = Vector2(-957, 169)
+position = Vector2(-950, -60)
+
+[node name="Upgrades" parent="." unique_id=60221739 instance=ExtResource("7_waa4j")]
+scale = Vector2(0.4, 0.4)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Upgrades" unique_id=195299685]
+scale = Vector2(2, 2)
+texture = ExtResource("8_e2l4f")
+
+[node name="Label2" type="Label" parent="Upgrades" unique_id=861838562]
+offset_left = -470.0
+offset_top = -819.0
+offset_right = 459.0
+offset_bottom = -672.0
+theme_override_font_sizes/font_size = 105
+text = "UPGRADES MENU"
+horizontal_alignment = 1
+
+[node name="Upgrade4" parent="Upgrades" unique_id=1113633998 instance=ExtResource("9_n5rqp")]
+position = Vector2(0, -400)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite1" type="Sprite2D" parent="Upgrades/Upgrade4" unique_id=1021506407]
+texture = ExtResource("10_irxef")
+
+[node name="Button4" type="Button" parent="Upgrades/Upgrade4" unique_id=761729934]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Upgrade5" parent="Upgrades" unique_id=1130916354 instance=ExtResource("9_n5rqp")]
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2" type="Sprite2D" parent="Upgrades/Upgrade5" unique_id=1069576704]
+texture = ExtResource("10_irxef")
+
+[node name="Button5" type="Button" parent="Upgrades/Upgrade5" unique_id=1554293245]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Upgrade6" parent="Upgrades" unique_id=1133554619 instance=ExtResource("9_n5rqp")]
+position = Vector2(0, 400)
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite3" type="Sprite2D" parent="Upgrades/Upgrade6" unique_id=816931353]
+texture = ExtResource("10_irxef")
+
+[node name="Button6" type="Button" parent="Upgrades/Upgrade6" unique_id=50568863]
+offset_left = -831.0
+offset_top = -219.0
+offset_right = 840.0
+offset_bottom = 218.0
+metadata/_edit_use_anchors_ = true
