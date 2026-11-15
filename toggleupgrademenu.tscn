@@ -3,8 +3,18 @@
 [ext_resource type="Texture2D" uid="uid://cefafgbaix8tm" path="res://assets/ToggleUpgradesMenu.jpg" id="1_vgdml"]
 [ext_resource type="Script" uid="uid://dowpi6ujm4pw5" path="res://toggleupgrademenu.gd" id="2_rungn"]
 
-[node name="Button" type="Button" unique_id=577515391]
+[node name="Node2D" type="Node2D" unique_id=1345687132]
+scale = Vector2(0.75, 0.75)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1418525075]
+position = Vector2(926, 288)
+texture = ExtResource("1_vgdml")
+
+[node name="Button" type="Button" parent="." unique_id=577515391]
 offset_right = 1841.0
 offset_bottom = 547.0
-icon = ExtResource("1_vgdml")
+theme_override_font_sizes/font_size = 200
+text = "Upgrades ->"
 script = ExtResource("2_rungn")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
