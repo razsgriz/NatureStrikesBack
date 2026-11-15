@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cupmjtwhcykwf"
-path="res://.godot/imported/FiraSans-Regular.ttf-859bbfc2082b01fafe25efb4a7b03c9b.fontdata"
+uid="uid://blxsetieohs8o"
+path="res://.godot/imported/Fredoka-VariableFont_wdth,wght.ttf-834a28e383aed53260eaf917bde91e68.fontdata"
 
 [deps]
 
-source_file="res://FiraSans-Regular.ttf"
-dest_files=["res://.godot/imported/FiraSans-Regular.ttf-859bbfc2082b01fafe25efb4a7b03c9b.fontdata"]
+source_file="res://assets/fonts/Fredoka-VariableFont_wdth,wght.ttf"
+dest_files=["res://.godot/imported/Fredoka-VariableFont_wdth,wght.ttf-834a28e383aed53260eaf917bde91e68.fontdata"]
 
 [params]
 

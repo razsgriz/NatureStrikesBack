@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jljbpgb4ghd4"
-path="res://.godot/imported/Australia.png-65066247ce823e050a0e5bc02cf58b5a.ctex"
+uid="uid://2f6mbe7h23hw"
+path="res://.godot/imported/human counter.jpeg-eaa0f84d4f3c34034aac79da9456a4fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Australia.png"
-dest_files=["res://.godot/imported/Australia.png-65066247ce823e050a0e5bc02cf58b5a.ctex"]
+source_file="res://assets/human counter.jpeg"
+dest_files=["res://.godot/imported/human counter.jpeg-eaa0f84d4f3c34034aac79da9456a4fb.ctex"]
 
 [params]
 

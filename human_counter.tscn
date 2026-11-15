@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dkfosyc85m4xv"]
+
+[ext_resource type="Texture2D" uid="uid://2f6mbe7h23hw" path="res://assets/human counter.jpeg" id="1_js7kd"]
+
+[node name="HumanCounter" type="Node2D" unique_id=1829298994]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=445756367]
+texture = ExtResource("1_js7kd")

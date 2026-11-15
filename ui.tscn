@@ -2,28 +2,34 @@
 
 [ext_resource type="PackedScene" uid="uid://bve8xc0agaknx" path="res://counterui.tscn" id="1_37rai"]
 [ext_resource type="Script" uid="uid://cpdd00x6ejhxx" path="res://ui.gd" id="1_nltto"]
-[ext_resource type="FontFile" uid="uid://dyny3rurijsno" path="res://Fredoka-Regular.ttf" id="2_0qrqu"]
+[ext_resource type="FontFile" uid="uid://dyny3rurijsno" path="res://assets/fonts/Fredoka-Regular.ttf" id="3_ibotj"]
 [ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_mx0kw"]
+[ext_resource type="AudioStream" uid="uid://c4jri6c67h7g2" path="res://assets/audio/MeanGreen.wav" id="5_ibotj"]
 
 [node name="ui" type="CanvasLayer" unique_id=1690332116]
 follow_viewport_enabled = true
 script = ExtResource("1_nltto")
 
 [node name="counterui" parent="." unique_id=711349832 instance=ExtResource("1_37rai")]
-position = Vector2(-609, -432)
+position = Vector2(0, -480)
+scale = Vector2(0.5, 0.5)
 
 [node name="treeAmount" type="Label" parent="." unique_id=186613561]
 top_level = true
-offset_left = -797.0
-offset_top = -521.0
-offset_right = -242.0
-offset_bottom = -366.0
+offset_left = -7.0
+offset_top = -508.0
+offset_right = 205.0
+offset_bottom = -422.0
+scale = Vector2(0.5, 0.5)
 size_flags_horizontal = 0
 size_flags_vertical = 8
 tooltip_text = "ebnfwjfwbjnlkjwfnkjen"
-theme_override_fonts/font = ExtResource("2_0qrqu")
+theme_override_fonts/font = ExtResource("3_ibotj")
 theme_override_font_sizes/font_size = 70
 horizontal_alignment = 1
 script = ExtResource("3_mx0kw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2075194142]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=435289718]
+stream = ExtResource("5_ibotj")
