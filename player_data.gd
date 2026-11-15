@@ -1,6 +1,5 @@
 extends Node2D
 
-
 var treeIncome = 0
 var greenness = 0
 
