@@ -1,11 +1,10 @@
 extends Node
 
-@onready var treeIncome = $player_data.get("treeIncome")
 signal tree_pressed(new_amount: int)
 
 @export var trees = 1
 func _ready():	
-	$ui/treeAmount.text = str(treeIncome)
+	$ui/treeAmount.text = str(PlayerData.treeIncome)
 	var treeSpawner = $TreeSpawner
 
 
@@ -43,8 +42,9 @@ func _on_tree_spawner_timeout() -> void:
 	treeNode.pressed.connect(
 		func() -> void:
 			treeNode.hide()
-			treeIncome += 1
-			$ui/treeAmount.text = str(treeIncome)
+			PlayerData.treeIncome += 1
+			$green_bar.position += Vector2(1.78, 0)
+			$ui/treeAmount.text = str(PlayerData.treeIncome)
 			
 	)
 	#treeNode.add_child(claimTree)
@@ -64,6 +64,6 @@ func delete_tree(treeNode):
 	treeNode.queue_free()
 
 func _on_claim_tree_pressed() -> void:
-	tree_pressed.emit(treeIncome)
+	tree_pressed.emit(PlayerData.treeIncome)
 	print("thingy")
 	$ui/treeAmount.text = str($player_data.get("treeIncome"))
