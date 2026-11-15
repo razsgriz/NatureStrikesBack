@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dwkqf3njkhl5q" path="res://assets/waka waka (africa).png" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://d2wl2u53banj7" path="res://ui.tscn" id="6_7mycd"]
 [ext_resource type="Script" uid="uid://bem72idfq5g18" path="res://player_data.gd" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://4qwq20ve8gsd" path="res://assets/green_bar.png" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://b3efnvq0boowl" path="res://green_bar.gd" id="9_4c57u"]
+[ext_resource type="Texture2D" uid="uid://bf57wpao4gde5" path="res://assets/human_bar.jpeg" id="9_kek77"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 script/source = "extends Timer
@@ -71,6 +74,19 @@ texture = ExtResource("5_7mycd")
 
 [node name="player_data" type="Node2D" parent="." unique_id=2074780632]
 script = ExtResource("7_272bh")
+
+[node name="green_bar" type="Sprite2D" parent="." unique_id=1777256827]
+position = Vector2(-960, 400)
+rotation = 3.1415927
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_5vw27")
+script = ExtResource("9_4c57u")
+
+[node name="human_bar" type="Sprite2D" parent="." unique_id=1941302916]
+position = Vector2(-960, 484)
+rotation = 3.1415927
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_kek77")
 
 [connection signal="timeout" from="TreeSpawner" to="." method="_on_tree_spawner_timeout"]
 [connection signal="timeout" from="EventGenerator" to="." method="_on_event_generator_timeout"]
