@@ -7,7 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://c4jri6c67h7g2" path="res://assets/audio/MeanGreen.wav" id="5_ibotj"]
 [ext_resource type="PackedScene" uid="uid://1a3s0ltctbqc" path="res://toggleupgrademenu.tscn" id="6_n5ude"]
 [ext_resource type="PackedScene" uid="uid://vraq7482jxmf" path="res://upgrades.tscn" id="7_waa4j"]
+[ext_resource type="PackedScene" uid="uid://dec17wqlpg1or" path="res://naturaldisastersmenu.tscn" id="7_y4yjw"]
 [ext_resource type="Texture2D" uid="uid://vbkb36rt61qa" path="res://assets/upgrades menu.jpg" id="8_e2l4f"]
+[ext_resource type="PackedScene" uid="uid://bygl8jtd67xv1" path="res://toggle_natural_disasters_menu.tscn" id="8_waa4j"]
 [ext_resource type="PackedScene" uid="uid://ba3y0r8x4ow2u" path="res://upgradeone.tscn" id="9_n5rqp"]
 [ext_resource type="Texture2D" uid="uid://dxo40dt73w8cr" path="res://assets/IMG_1221.jpeg" id="10_irxef"]
 
@@ -99,3 +101,9 @@ offset_top = -219.0
 offset_right = 840.0
 offset_bottom = 218.0
 metadata/_edit_use_anchors_ = true
+
+[node name="toggle_disasters" parent="." unique_id=209846272 instance=ExtResource("8_waa4j")]
+position = Vector2(-949, 35)
+
+[node name="naturaldisastersmenu" parent="toggle_disasters" unique_id=1231378744 instance=ExtResource("7_y4yjw")]
+position = Vector2(780, -64)

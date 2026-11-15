@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bygl8jtd67xv1"]
+
+[ext_resource type="Texture2D" uid="uid://cefafgbaix8tm" path="res://assets/ToggleUpgradesMenu.jpg" id="1_dlsbm"]
+[ext_resource type="PackedScene" uid="uid://dec17wqlpg1or" path="res://naturaldisastersmenu.tscn" id="3_g3b05"]
+[ext_resource type="Script" uid="uid://dtnc3b0fk6ndj" path="res://toggle_natural_disasters.gd" id="3_ofs6k"]
+
+[node name="toggle_disasters" type="Node2D" unique_id=1345687132]
+scale = Vector2(0.75, 0.75)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1418525075]
+position = Vector2(262.08334, 77.25001)
+scale = Vector2(0.27559555, 0.21799628)
+texture = ExtResource("1_dlsbm")
+
+[node name="Button" type="Button" parent="." unique_id=577515391]
+offset_left = 12.0
+offset_top = 22.666668
+offset_right = 516.0
+offset_bottom = 134.66669
+theme_override_font_sizes/font_size = 82
+text = "Disasters ->"
+script = ExtResource("3_ofs6k")
+
+[node name="naturaldisastersmenu" parent="." unique_id=1231378744 instance=ExtResource("3_g3b05")]
+position = Vector2(1146.6667, 516)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
