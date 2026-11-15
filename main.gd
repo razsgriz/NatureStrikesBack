@@ -5,7 +5,7 @@ class tree_income:
 	var value = 1
 
 static var treeIncome = tree_income.new()
-
+signal tree_pressed()
 @export var trees = 1
 func _ready():	
 	$treeAmount.text = str(treeIncome.value)
