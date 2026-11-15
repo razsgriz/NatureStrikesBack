@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://dyny3rurijsno" path="res://assets/fonts/Fredoka-Regular.ttf" id="3_ibotj"]
 [ext_resource type="Script" uid="uid://12ig67s2ya4x" path="res://tree_amount.gd" id="3_mx0kw"]
 [ext_resource type="AudioStream" uid="uid://c4jri6c67h7g2" path="res://assets/audio/MeanGreen.wav" id="5_ibotj"]
+[ext_resource type="PackedScene" uid="uid://1a3s0ltctbqc" path="res://toggleupgrademenu.tscn" id="6_n5ude"]
 
 [node name="ui" type="CanvasLayer" unique_id=1690332116]
 follow_viewport_enabled = true
@@ -33,3 +34,6 @@ script = ExtResource("3_mx0kw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=435289718]
 stream = ExtResource("5_ibotj")
+
+[node name="Node2D" parent="." unique_id=1345687132 instance=ExtResource("6_n5ude")]
+position = Vector2(-957, 169)

@@ -7,13 +7,16 @@
 scale = Vector2(0.75, 0.75)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1418525075]
-position = Vector2(926, 288)
+position = Vector2(262.08334, 77.25001)
+scale = Vector2(0.27559555, 0.21799628)
 texture = ExtResource("1_vgdml")
 
 [node name="Button" type="Button" parent="." unique_id=577515391]
-offset_right = 1841.0
-offset_bottom = 547.0
-theme_override_font_sizes/font_size = 200
+offset_left = 12.0
+offset_top = 22.666668
+offset_right = 516.0
+offset_bottom = 134.66669
+theme_override_font_sizes/font_size = 82
 text = "Upgrades ->"
 script = ExtResource("2_rungn")
 

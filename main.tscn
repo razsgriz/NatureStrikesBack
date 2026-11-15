@@ -48,17 +48,17 @@ script = SubResource("GDScript_0xm2m")
 autostart = true
 
 [node name="Eurasia" type="Sprite2D" parent="." unique_id=1968136900]
-position = Vector2(479, -189)
+position = Vector2(438.00003, -242)
 scale = Vector2(1.9248749, 1.7738096)
 texture = ExtResource("4_7mycd")
 
 [node name="Americas" type="Sprite2D" parent="." unique_id=997143134]
-position = Vector2(-596.00006, -98.124954)
-scale = Vector2(1.2244225, 1.1530542)
+position = Vector2(-596.00006, -3.124977)
+scale = Vector2(1.2244225, 1.4053782)
 texture = ExtResource("5_272bh")
 
 [node name="Africa" type="Sprite2D" parent="." unique_id=456698430]
-position = Vector2(-20, 226.99998)
+position = Vector2(5, 194)
 scale = Vector2(3.697842, 3.1315792)
 texture = ExtResource("6_5vw27")
 

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dec17wqlpg1or"]
+
+[ext_resource type="Script" uid="uid://b55q2my8ycwcm" path="res://naturaldisastersmenu.gd" id="1_7jkwk"]
+[ext_resource type="Texture2D" uid="uid://vbkb36rt61qa" path="res://assets/upgrades menu.jpg" id="1_cgyn4"]
+
+[node name="naturaldisastersmenu" type="Node2D" unique_id=1231378744]
+script = ExtResource("1_7jkwk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=482935123]
+texture = ExtResource("1_cgyn4")
+
+[node name="Label" type="Label" parent="." unique_id=1764641209]
+offset_left = -233.0
+offset_top = -397.0
+offset_right = 230.0
+offset_bottom = -326.0
+theme_override_font_sizes/font_size = 35
+text = "NATURAL DISASTERS MENU"
+horizontal_alignment = 1
