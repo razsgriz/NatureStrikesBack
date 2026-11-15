@@ -59,41 +59,41 @@ theme_override_font_sizes/font_size = 105
 text = "UPGRADES MENU"
 horizontal_alignment = 1
 
-[node name="Upgrade1" parent="Upgrades" unique_id=1113633998 instance=ExtResource("9_n5rqp")]
+[node name="Upgrade4" parent="Upgrades" unique_id=1113633998 instance=ExtResource("9_n5rqp")]
 position = Vector2(0, -400)
 scale = Vector2(0.5, 0.5)
 
-[node name="Sprite2D2" type="Sprite2D" parent="Upgrades/Upgrade1" unique_id=1021506407]
+[node name="Sprite1" type="Sprite2D" parent="Upgrades/Upgrade4" unique_id=1021506407]
 texture = ExtResource("10_irxef")
 
-[node name="Button2" type="Button" parent="Upgrades/Upgrade1" unique_id=761729934]
+[node name="Button4" type="Button" parent="Upgrades/Upgrade4" unique_id=761729934]
 offset_left = -831.0
 offset_top = -219.0
 offset_right = 840.0
 offset_bottom = 218.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Upgrade2" parent="Upgrades" unique_id=1130916354 instance=ExtResource("9_n5rqp")]
+[node name="Upgrade5" parent="Upgrades" unique_id=1130916354 instance=ExtResource("9_n5rqp")]
 scale = Vector2(0.5, 0.5)
 
-[node name="Sprite2D2" type="Sprite2D" parent="Upgrades/Upgrade2" unique_id=1069576704]
+[node name="Sprite2" type="Sprite2D" parent="Upgrades/Upgrade5" unique_id=1069576704]
 texture = ExtResource("10_irxef")
 
-[node name="Button2" type="Button" parent="Upgrades/Upgrade2" unique_id=1554293245]
+[node name="Button5" type="Button" parent="Upgrades/Upgrade5" unique_id=1554293245]
 offset_left = -831.0
 offset_top = -219.0
 offset_right = 840.0
 offset_bottom = 218.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Upgrade3" parent="Upgrades" unique_id=1133554619 instance=ExtResource("9_n5rqp")]
+[node name="Upgrade6" parent="Upgrades" unique_id=1133554619 instance=ExtResource("9_n5rqp")]
 position = Vector2(0, 400)
 scale = Vector2(0.5, 0.5)
 
-[node name="Sprite2D2" type="Sprite2D" parent="Upgrades/Upgrade3" unique_id=816931353]
+[node name="Sprite3" type="Sprite2D" parent="Upgrades/Upgrade6" unique_id=816931353]
 texture = ExtResource("10_irxef")
 
-[node name="Button2" type="Button" parent="Upgrades/Upgrade3" unique_id=50568863]
+[node name="Button6" type="Button" parent="Upgrades/Upgrade6" unique_id=50568863]
 offset_left = -831.0
 offset_top = -219.0
 offset_right = 840.0
