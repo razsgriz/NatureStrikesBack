@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://xr4dfmdwt4fw" path="res://tree.gd" id="1_nnvrw"]
 [ext_resource type="Script" uid="uid://b0gx2xqttr41e" path="res://claim_tree.gd" id="2_gvmkm"]
 [ext_resource type="Texture2D" uid="uid://booa8rtb52mek" path="res://assets/tree2.png" id="2_nnvrw"]
+[ext_resource type="AudioStream" uid="uid://doi5k02jlfa3b" path="res://assets/audio/pop.wav" id="4_d2g23"]
 
 [node name="Tree" type="Node2D" unique_id=1230906408]
 script = ExtResource("1_nnvrw")
@@ -18,5 +19,8 @@ script = ExtResource("2_gvmkm")
 position = Vector2(45, 46)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_nnvrw")
+
+[node name="pop_sound" type="AudioStreamPlayer" parent="ClaimTree" unique_id=391559845]
+stream = ExtResource("4_d2g23")
 
 [connection signal="pressed" from="ClaimTree" to="." method="_on_claim_tree_pressed"]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d0vfkyidk311y"]
+
+[ext_resource type="Texture2D" uid="uid://hsqopk25xr8e" path="res://assets/start menu.png" id="1_ynf42"]
+
+[node name="Startmenu" type="Node2D" unique_id=1528498595]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1451246309]
+texture = ExtResource("1_ynf42")

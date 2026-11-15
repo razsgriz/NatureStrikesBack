@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://ba0r8jpc6yccp"]
 
 [ext_resource type="Script" uid="uid://b0ydofrg06h52" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://34ktw8jx38wa" path="res://main_camera.gd" id="2_efxa6"]
 [ext_resource type="Texture2D" uid="uid://ciq7af7qh2baf" path="res://assets/eurasia.png" id="4_7mycd"]
 [ext_resource type="Texture2D" uid="uid://jjm0b7ydnkpl" path="res://assets/Australia.png" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://ddfuwhieexy3s" path="res://assets/nort america.png" id="5_272bh"]
 [ext_resource type="Texture2D" uid="uid://dwkqf3njkhl5q" path="res://assets/waka waka (africa).png" id="6_5vw27"]
 [ext_resource type="PackedScene" uid="uid://d2wl2u53banj7" path="res://ui.tscn" id="6_7mycd"]
 [ext_resource type="Script" uid="uid://bem72idfq5g18" path="res://player_data.gd" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://4qwq20ve8gsd" path="res://assets/green_bar.png" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://b3efnvq0boowl" path="res://green_bar.gd" id="9_4c57u"]
+[ext_resource type="Texture2D" uid="uid://bf57wpao4gde5" path="res://assets/human_bar.jpeg" id="9_kek77"]
+[ext_resource type="Texture2D" uid="uid://hsqopk25xr8e" path="res://assets/startmenu.png" id="12_dg77c"]
 
 [sub_resource type="GDScript" id="GDScript_0xm2m"]
 script/source = "extends Timer
@@ -42,7 +47,8 @@ script = ExtResource("1_0xm2m")
 autostart = true
 script = SubResource("GDScript_0xm2m")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1432403375]
+[node name="MainCamera" type="Camera2D" parent="." unique_id=1432403375]
+script = ExtResource("2_efxa6")
 
 [node name="EventGenerator" type="Timer" parent="." unique_id=1484701567]
 autostart = true
@@ -72,5 +78,31 @@ texture = ExtResource("5_7mycd")
 [node name="player_data" type="Node2D" parent="." unique_id=2074780632]
 script = ExtResource("7_272bh")
 
+[node name="green_bar" type="Sprite2D" parent="." unique_id=1777256827]
+position = Vector2(-960, 400)
+rotation = 3.1415927
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_5vw27")
+script = ExtResource("9_4c57u")
+
+[node name="human_bar" type="Sprite2D" parent="." unique_id=1941302916]
+position = Vector2(-960, 484)
+rotation = 3.1415927
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_kek77")
+
+[node name="prologue" type="Sprite2D" parent="." unique_id=964265122]
+position = Vector2(0, 5000)
+texture = ExtResource("12_dg77c")
+
+[node name="play" type="Button" parent="prologue" unique_id=647303886]
+offset_left = -210.0
+offset_top = 284.0
+offset_right = 211.0
+offset_bottom = 489.0
+theme_override_font_sizes/font_size = 100
+text = "PLAY"
+
 [connection signal="timeout" from="TreeSpawner" to="." method="_on_tree_spawner_timeout"]
 [connection signal="timeout" from="EventGenerator" to="." method="_on_event_generator_timeout"]
+[connection signal="pressed" from="prologue/play" to="MainCamera" method="_on_play_pressed"]
